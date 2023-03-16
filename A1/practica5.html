@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index Wamai Industries</title>
+
+
+<style type="text/css">
+	*{margin:0;padding:0;box-sizing:border-box;}  
+nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:20px;
+	  font-style: italic;
+      }
+            
+nav li{
+      display:inline-block;
+      width:196px;
+      height:50px;
+      padding:5px 50px;
+      background-color:#007ED3;
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      position:relative;
+}
+            
+nav li:hover{
+      background-color:#84BADE;
+      color:#000;
+      }
+            
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:30px;
+      left:0px;
+}
+body {
+	
+	background: #85C1E9;
+}
+	table{
+		background: #FFFFFF;
+		margin: auto;
+	}
+a:link {
+color: #FFFFFF;
+text-decoration: none;
+}
+
+a:visited {
+color: #00E3C3;
+text-decoration: none;
+}
+.reg:link{
+color: blue;
+	text-decoration: none;
+}
+.reg:visited{
+color: aqua;
+	text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+<table width="1000" border="1">
+<tbody>
+<tr>
+<td colspan="6"><img src="logo.jpg" width="1200" height="200" alt=""/></td>
+</tr>
+<tr>
+		<td colspan="6"><nav><ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+		<li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li><a href="Preguntas frecuentes.html">Preguntas</a></li>
+		<li><a href="Practicas.html">Practicas</a>
+			<ul><li><a href="Practica1.html">Practica 1</a></li>
+            <li><a href="Practica2.html">Practica 2</a></li>
+            <li><a href="Practica3.html">Practica 3</a></li>
+            <li><a href="Practica4.html">Practica 4</a></li>
+			<li><a href="practica5.html">Practica 5</a></li>
+			<li><a href="Practica6.html">Practica 6</a></li>
+			<li><a href="Practica7.html">Practica 7</a></li>
+			<li><a href="Practica8.html">Practica 8</a></li></ul>
+		</li>
+    </ul></nav>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+	
+	
+	
+	
+	<div class="inside-article">
+		
+				<div class="featured-image page-header-image-single grid-container grid-parent">
+					<center>
+			<img width="608" height="313" src="imagenes/css1.png" class="attachment-full size-full wp-post-image" alt="" loading="lazy" itemprop="image">	</center>	</div><br>
+
+					<header class="entry-header">
+				<h1 class="entry-title" itemprop="headline">Como usar CSS en HTML</h1>		
+					</header>
+			<br>
+
+<p>Aprenderemos a utilizar CSS en HTML, existen varias formas de aplicar <em>estilos CSS</em> a nuestros elementos hechos con código HTML, todo ello abordaremos en esta lección y además estableceremos <strong>cuándo, porqué y dónde</strong> emplear una u otra forma ¿Listos? ¡Pues vamos a ello!</p>
+
+<br>
+
+<h2><span class="ez-toc-section" id="Etiquetas_de_parrafo_y_encabezados_HTML"></span>Como se puede utilizar CSS <span class="ez-toc-section-end"></span></h2>
+
+<br>
+
+
+<p>Existen tres formas bastante conocidas de emplear CSS para maquetar una página HTML y son las siguientes:
+	<ul>
+		<li>Aplicar CSS en linea HTML mediante atributos.</li>
+		<li>Incrustar el código CSS en una etiqueta &lt;style&gt; dentro del documento HTML.</li>
+		<li>Crear un documento CSS externo.</li>
+	</ul>	
+</p>
+	
+<br>
+
+<h3><span class="ez-toc-section" id="Ejemplo_de_etiquetas_de_texto_HTML"></span>CSS en línea empleando un atributo<span class="ez-toc-section-end"></span></h3>
+<br>
+
+<p>
+Esta forma de utilizar CSS es la mas básica y muy conocida, de hecho, de alguna manera ya lo habíamos utilizado en el curso de HTML; básicamente consiste en indicar los estilos de un elemento HTML dentro de su etiqueta de apertura, mediante un atributo HTML.
+<br>
+El atributo STYLE es la mejor opción para colocar estilos, dentro de su valor irán las propiedades y sus respectivos valores CSS.
+</p>
+<br>
+<p><center><code>&lt;p style="color: red;"&gt; este es un párrafo</code></center>
+<br>
+De esta manera se aplica un estilo determinado solo al elemento de la etiqueta, en este caso color de letra para el párrafo será rojo
+</p>
+	<br>
+<h2><span class="ez-toc-section" id="Lista_de_formatos_y_etiquetas_de_texto_HTML"></span>CSS incrustado en el documento HTML<span class="ez-toc-section-end"></span></h2>
+<br>
+<p>
+Otra manera fantástica de usar CSS en documento HTML es incrustando el código CSS dentro de ella, de tal manera que los estilos que deseamos aplicar afectarán no solo a un elemento como en el caso anterior, sino serán aplicados a toda la página.
+<br>
+Si en el caso anterior STYLE funcionaba como un atributo, ahora funcionará como una etiqueta HTML, con su respectiva etiqueta de apertura y cierre, de la siguiente manera:
+</p>
+<br>
+<p><center><code>&lt;style&gt;<br>
+ /* Aquí irá todo el código CSS*/<br>
+&lt;/style&gt;
+</code></center></p>
+<br>
+<p>Indicaciones:
+<br>
+La etiqueta &lt;style&gt; contiene el código CSS que desea aplicar al documento HTML.
+&lt;style&gt; será incrustado dentro de la etiqueta &lt;head&gt; del documento para que funcione correctamente.
+</p>
+<p><center><code>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt; TITULO&lt;/title&gt;<br>
+&lt;style&gt;<br>
+  p {color:red;}<br>
+  a {}<br>
+  #cabecera {} <br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</code></center></p>
+	<br>
+<h2><span class="ez-toc-section" id="Diferencia_entre_/_y_/"></span>CSS en un documento CSS externo<span class="ez-toc-section-end"></span></h2>
+<br>
+<p>Esta es sin duda la forma mas recomendable de aplicar estilos a documentos HTML, consiste en crear un documento CSS muy aparte y guardarlo con la extensión .css, por ejemplo: midocumento.css
+<br>
+En el documento CSS se encuentren todos los códigos CSS que determinarán el estilo de todos los elementos HTML apuntados.<br>
+Desde un documento HTML llamaremos al documento CSS para que se haga presente y aplique los estilo que hemos escrito en dicho documento CSS.<br>
+Para realizar la invocación, emplearemos la etiqueta &lt;link&gt; dentro de la etiqueta &lt;head&gt; del documento HTML y mediante el atributo rel y href invocamos al documento CSS. Veamos la sintaxis:</p>
+<br>
+<p><center><code>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt; TITULO&lt;/title&gt;<br>
+&lt;link rel="stylesheet" href="midocumento.css"&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;	
+</code></center></p>
+	<br>
+<p>El atributo REL define la relacion entre el documneto HTML y el documneto CSS invocado, el valor StyleSheet indica que es un estilo preferido, mientras que rel=»Alternate Stylesheet» define un estilo alterno.
+<br>
+El atributo HREF es la que invoca al documento CSS, si esta esta guardad en la misma carpeta que el documento HTML entonces basta con colocar el nombre del documento con su respectiva extensión como en el ejemplo. si el archivo CSS se encuentra guardada en otra carpeta, entonces hay que especificar la dirección URL donde esta ubicada.</p>
+<br>
+	<center><img src="https://mdn.mozillademos.org/files/11925/csspartes.png" ></center>
+<td bgcolor="#2E2C28" ><center>
+	<img src="https://tpc.googlesyndication.com/simgad/5914841909684273626" border="0" width="300" height="250" alt="" class="img_ad">
+ 	<img src="https://tpc.googlesyndication.com/simgad/4989088648547158897" border="0" width="300" height="250" alt="" class="img_ad">
+	</center>
+</td>
+</tr>
+</tbody>
+</table>
+	<footer><center>
+<br>
+<u> Registrate <a href="registro.html" class="reg">aquí</a></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Inicia Sesión <a href="sesion.html" class="reg">aquí</a></u><br>
+	
+  <center><a href=""><img src="fac.png" width="40"></a><a href=""><img src="twit.png" width="40"></a><a href=""><img src="insta.png" width="40"></a></center>
+	
+<p><b>Derechos reservados la reproduccion parcial de esta pagina sin autorización es ilegal</b></p>
+</center></footer>
+</body>
+</html>

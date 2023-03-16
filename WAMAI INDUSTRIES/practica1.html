@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index Wamai Industries</title>
+<script language="javascript">
+	function averiguarnota(examen){
+	var resultado=0;
+	for(i=0;i<examen.elements.length;i++){
+	if((examen.elements[i].type=="radio")&&(examen.elements[i].value=="bien")&&(examen.elements[i].checked)){
+		resultado++;
+	}
+	}
+		alert("Acertaste "+resultado+" de 5 preguntas. Vuelve a intentarlo!");
+		return false;
+	}
+	</script>
+<style type="text/css">
+	*{margin:0;padding:0;box-sizing:border-box;}  
+nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:20px;
+	  font-style: italic;
+      }
+            
+nav li{
+      display:inline-block;
+      width:196px;
+      height:50px;
+      padding:5px 50px;
+      background-color:#007ED3;
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      position:relative;
+}
+            
+nav li:hover{
+      background-color:#84BADE;
+      color:#000;
+      }
+            
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:30px;
+      left:0px;
+}
+body {
+	
+	background: #85C1E9;
+}
+	table{
+		background: #FFFFFF;
+		margin: auto;
+	}
+a:link {
+color: #FFFFFF;
+text-decoration: none;
+}
+
+a:visited {
+color: #00E3C3;
+text-decoration: none;
+}
+.reg:link{
+color: blue;
+	text-decoration: none;
+}
+.reg:visited{
+color: aqua;
+	text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+<table width="1000" border="1">
+<tbody>
+<tr>
+<td colspan="6"><img src="logo.jpg" width="1200" height="200" alt=""/></td>
+</tr>
+<tr>
+		<td colspan="6"><nav><ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+		<li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li><a href="Preguntas frecuentes.html">Preguntas</a></li>
+		<li><a href="Practicas.html">Practicas</a>
+			<ul><li><a href="Practica1.html">Practica 1</a></li>
+            <li><a href="Practica2.html">Practica 2</a></li>
+            <li><a href="Practica3.html">Practica 3</a></li>
+            <li><a href="Practica4.html">Practica 4</a></li>
+			<li><a href="practica5.html">Practica 5</a></li>
+			<li><a href="Practica6.html">Practica 6</a></li>
+			<li><a href="Practica7.html">Practica 7</a></li>
+			<li><a href="Practica8.html">Practica 8</a></li></ul>
+		</li>
+    </ul></nav>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+	
+	
+	<div class="inside-article">
+				<div class="featured-image page-header-image-single grid-container grid-parent">
+			<center><img width="704" height="413" src="https://desarrolladoresweb.org/wp-content/uploads/hipervinculos-en-html.jpg" class="attachment-full size-full wp-post-image" alt="" loading="lazy" itemprop="image">		</center></div>
+					<header class="entry-header">
+				<h1 class="entry-title" itemprop="headline">Cómo poner hipervínculos o enlaces en HTML</h1>		<div class="entry-meta">
+			<br>
+
+<p>Aprendamos a colocar hipervínculos en HTML a nuestras páginas web, es una tarea muy fácil y a la vez muy útil para mejorar la usabilidad de una página, nos da el poder de dirigir a los usuarios a otras direcciones URL, además de ello conoceremos los atributos que corresponden a enlaces HTML. </p>
+<br>
+
+
+
+
+
+<h2><span class="ez-toc-section" id="Atributos_para_enlaces_HTML"></span>Atributos para enlaces HTML<span class="ez-toc-section-end"></span></h2>
+
+<br>
+
+
+<p>Existen varios atributos para los enlaces, en esta lección los desarrollamos detalladamente cada uno de ellos, pero a continuación los nombramos:</p>
+
+
+<br>
+
+<ul><li>href</li><li>target</li><li>rel</li></ul>
+
+<br>
+
+
+<p>Existen muchos más, pero estos te son los principales. Ahora vemos como se usan y los valores que pueden tomar estas.</p>
+
+<br>
+
+
+<h3><span class="ez-toc-section" id="Atributo_href_para_enlaces_HTML"></span><strong>Atributo href</strong>  para enlaces HTML <span class="ez-toc-section-end"></span></h3>
+
+<br>
+
+
+<p>Para indicar la dirección destino del enlace utilizaremos el atributo href, En todo caso quedaría de la siguiente manera.</p>
+
+<br>
+
+<p>1.-&lt;a href="URL"&gt; texto ancla l&lt;/a&gt;</p><br>
+
+
+<br>
+
+<ul><li>El atributo href contiene el valor de la url de destino</li><li>El texto ancla es el texto visible, o el texto que contiene el enlace, el texto donde se hará clic.</li><li>&lt;a&gt; puede ir dentro de un párrafo para un texto ancla especifico.</li><li>Se puede colocar enlace tanto a texto como a imágenes.</li></ul>
+
+				<br>
+
+
+
+<h3><span class="ez-toc-section" id="Atributo_target_para_enlaces_HTML"></span><strong>Atributo target</strong> para enlaces HTML <span class="ez-toc-section-end"></span></h3>
+<br>
+
+
+
+<p>Por defecto, los enlaces se abren en una misma ventana del navegador web, <strong>para que el enlace se habrá en una nueva ventana el atributo target toma el valor «_blank»</strong> de la siguiente manera:</p>
+
+<br>
+
+
+<p>Ejemplo:</p>
+<br>
+
+
+<p>1.-&lt;a href="https://www.deingenierias.org/" target="_blank"1&gt;Este enlace se abrirá en una nueva ventanal&lt;/a&gt;</p><br>
+
+
+
+<h3><span class="ez-toc-section" id="Atributo_rel_para_enlaces_HTML"></span><strong>Atributo rel </strong>para enlaces HTML <span class="ez-toc-section-end"></span></h3>
+
+
+<br>
+
+<p>El atributo <code>rel</code> de HTML sirve para indicar la relación que existe entre la pagina del cual sale el enlace y la pagina que recibe el enlace, muy importante para indicar a los motores de búsqueda dicha relación y también a los usuarios. </p>
+
+
+<br>
+
+<h4><span class="ez-toc-section" id="Valores_para_el_atributo_rel"></span><strong>Valores para el atributo rel</strong><span class="ez-toc-section-end"></span></h4>
+<br>
+
+
+
+<ul><li><code>sponsored</code>.- para indicar que el enlace es un enlace de pago.</li><li><code>ugc</code>.- indica que el enlace es un enlace generado por el usuario.</li><li><code>nofollow</code>.- indica a los motores de búsqueda que no siga el enlace como si fuera natural.</li></ul>
+
+
+<br>
+
+<p><strong>Ejemplo</strong>:</p>
+<br>
+
+
+<p>1.-&lt;a href="https://www.deundominid.com/"  rel="nofollow"1&gt;Este enlace, es un enlace nofollow de ejemplol&lt;/a&gt;</p><br>
+						
+						<p><strong>Ponte a prueba</strong>:</p>
+						<form name="examen" onSubmit="return averiguarnota(this);">
+	1. ¿Que valor tiene el atributo href?
+	<br><input type="radio" name="resp1" value="mal">el titulo de la pagina
+	<br><input type="radio" name="resp1" value="mal">un texto con almohadilla
+	<br><input type="radio" name="resp1" value="bien">URL del destino
+	<br>
+	<br>2. ¿Se puede hacer un link entre parrafos?
+	<br><input type="radio" name="resp2" value="bien">Si
+	<br><input type="radio" name="resp2" value="mal">No
+	<br><input type="radio" name="resp2" value="mal">No lo se
+	<br>
+	<br>3. 
+	<br><input type="radio" name="resp3" value="bien">Cuendo termina de cargarse una página
+	<br><input type="radio" name="resp3" value="mal">Cuando termina de cargarse un gráfico
+	<br><input type="radio" name="resp3" value="mal">Cuando empieza a cargarse una página
+	<br>
+	<br>4.-¿Que <i>array</i> contiene los graficos de una página?
+	<br><input type="radio" name="resp4" value="mal">document.graphics
+	<br><input type="radio" name="resp4" value="bien">document.images
+	<br><input type="radio" name="resp4" value="mal">no hay ninguno
+	
+	<br>5.-El método <tt>alert</tt> sirve para: 
+	<br><input type="radio" name="resp5" value="mal">hacer sonar un pitido de alarma
+	<br><input type="radio" name="resp5" value="bien">lanzar una ventana con información
+	<br><input type="radio" name="resp5" value="mal">decirle al navegador que hay un problema con el codigo
+	<br>
+	
+	<br><input type="submit" value="Quiero saber mi nota">		
+	</form>	
+<td bgcolor="#2E2C28" ><center>
+	<img src="https://i1.wp.com/pivigames.blog/wp-content/uploads/2021/03/Netflix2.jpg?w=760&ssl=1" border="0" width="300" height="250" alt="" class="img_ad">
+	</center>
+</td>
+</tr>
+</tbody>
+		
+</table>
+	
+	<footer><center>
+<br>
+<u> Registrate <a href="registro.html" class="reg">aquí</a></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Inicia Sesión <a href="sesion.html" class="reg">aquí</a></u><br>
+	
+  <center><a href=""><img src="fac.png" width="40"></a><a href=""><img src="twit.png" width="40"></a><a href=""><img src="insta.png" width="40"></a></center>
+	
+<p><b>Derechos reservados la reproduccion parcial de esta pagina sin autorización es ilegal</b></p>
+</center></footer>
+</body>
+</html>

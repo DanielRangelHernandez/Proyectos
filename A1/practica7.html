@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index Wamai Industries</title>
+
+
+<style type="text/css">
+	*{margin:0;padding:0;box-sizing:border-box;}  
+nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:20px;
+	  font-style: italic;
+      }
+            
+nav li{
+      display:inline-block;
+      width:196px;
+      height:50px;
+      padding:5px 50px;
+      background-color:#007ED3;
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      position:relative;
+}
+            
+nav li:hover{
+      background-color:#84BADE;
+      color:#000;
+      }
+            
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:30px;
+      left:0px;
+}
+body {
+	
+	background: #85C1E9;
+}
+	table{
+		background: #FFFFFF;
+		margin: auto;
+	}
+a:link {
+color: #FFFFFF;
+text-decoration: none;
+}
+
+a:visited {
+color: #00E3C3;
+text-decoration: none;
+}
+.reg:link{
+color: blue;
+	text-decoration: none;
+}
+.reg:visited{
+color: aqua;
+	text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+<table width="1000" border="1">
+<tbody>
+<tr>
+<td colspan="6"><img src="logo.jpg" width="1200" height="200" alt=""/></td>
+</tr>
+<tr>
+		<td colspan="6"><nav><ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+		<li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li><a href="Preguntas frecuentes.html">Preguntas</a></li>
+		<li><a href="Practicas.html">Practicas</a>
+			<ul><li><a href="Practica1.html">Practica 1</a></li>
+            <li><a href="Practica2.html">Practica 2</a></li>
+            <li><a href="Practica3.html">Practica 3</a></li>
+            <li><a href="Practica4.html">Practica 4</a></li>
+			<li><a href="practica5.html">Practica 5</a></li>
+			<li><a href="Practica6.html">Practica 6</a></li>
+			<li><a href="Practica7.html">Practica 7</a></li>
+			<li><a href="Practica8.html">Practica 8</a></li></ul>
+		</li>
+    </ul></nav>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+
+	<div class="inside-article">
+		
+				<div class="featured-image page-header-image-single grid-container grid-parent">
+					<center>
+			<img width="608" height="313" src="https://desarrolladoresweb.org/wp-content/uploads/Poner-estilo-a-listas-CSS.png" alt="" loading="lazy" itemprop="image">	</center>	</div><br>
+
+					<header class="entry-header">
+				<h1 class="entry-title" itemprop="headline">Estilo para listas en CSS</h1>		
+					</header>
+			<br>
+
+<p>Ahora nos toca aprender a colocar estilos a las listas con CSS, en especial nos enfocaremos en el estilo de la viñeta o marcador de los elementos de la lista. En Listas de HTML ya habíamos aplicado de forma básica los estilos para listas, pues ahora adentrémonos en la forma de trabajar pero con CSS. Esta lección es muy hermosa ¡Ya verás!</p>
+
+<br>
+
+<h2><span class="ez-toc-section" id="Etiquetas_de_parrafo_y_encabezados_HTML"></span>La propiedad list-style-type<span class="ez-toc-section-end"></span></h2>
+
+<br>
+
+
+<p>La propiedad <em>list-style-type</em> nos permite establecer el tipo de estilo que queremos para los marcadores de la lista, existen varios valores que puede tomar y los conoceremos a continuación
+</p>
+<p>
+	<ul>
+	<li>disc.- indica un marcador en forma de disco.</li>
+<li>circle.- marcador con forma de círculo.</li>
+<li>square.- tipo de estilo cuadrado.</li>
+<li>decimal.- Este valor enumera la lista empezando por 1.</li>
+<li>decimal-leading-zero.- Empieza la numeración con un 01.</li>
+<li>lower-roman.- lista con números romanos en minúscula (i, ii, iii, iv, v, etc.).</li>
+<li>upper-roman.- números romanos en mayúscula (I, II, III, IV…).</li>
+<li>lower-greek.- letras griegas en minúscula alfa/α, beta/β, gamma/γ, …</li>
+<li>lower-latin.- indica letras ASCII en minúscula (a, b, c, … z).</li>
+<li>upper-latin.- letras ASCII en mayúscula (A, B, C, … Z).</li>
+<li>armenian.- aplica numeración armenia tradicional (ayb/ayp, ben/pen, gim/keem, …).</li>
+<li>georgian.- numeración georgiana tradicional (an, ban, gan, …, he, tan, in, in-an, …).</li>
+<li>none.- no aplica ningún estilo.</li>
+	</ul>
+</p>
+<br>
+<h2><span class="ez-toc-section" id="Ejemplo_de_etiquetas_de_texto_HTML"></span>Ejemplo de estilos para lista con CSS<span class="ez-toc-section-end"></span></h2>
+<br>
+<h3><span class="ez-toc-section" id=""></span>Para listas sin ordenar:<span class="ez-toc-section-end"></span></h3>
+<p><center><code>
+	 &lt;ul class="circulo"&gt;
+<br>
+&lt;li&gt;Gato &lt;/li&gt;<br>
+&lt;li&gt;Ratón &lt;/li&gt;<br>
+&lt;li&gt;Conejo &lt;/li&gt;<br>
+
+&lt;/ul&gt;<br>
+<br>
+&lt;ul class="cuadrado"&gt;<br>
+
+&lt;li&gt;Pepel &lt;/li&gt;<br>
+&lt;li&gt;Roca &lt;/li&gt;<br>
+&lt;li&gt;Tijera &lt;/li&gt;<br>
+
+&lt;/ul&gt;<br>
+<br>
+ul.circulo {list-style-type: circle;}<br>
+
+ul.cuadrado {list-style-type: square;}<br>
+
+</code></center></p>
+<br>
+Resultado:
+<p>
+<br>
+<img src="https://desarrolladoresweb.org/wp-content/uploads/Estilo-para-listas-sin-ordenar-CSS.jpg">
+<br>
+</p>
+<h3><br><span class="ez-toc-section" id="Lista_de_formatos_y_etiquetas_de_texto_HTML"></span>Para listas ordenadas:<span class="ez-toc-section-end"></span></h3>
+<br>
+<p><center><code>
+	&lt;ol class="latin"&gt;<br>
+
+&lt;li&gt;Observe &lt;/li&gt;<br>
+&lt;li&gt;Analice&lt;/li&gt;<br>
+&lt;li&gt;Resuelva&lt;/li&gt;<br>
+
+&lt;/ol&gt;<br>
+<br>
+&lt;ol class="roman"&gt;<br>
+
+&lt;li&gt;Desayuno &lt;/li&gt;<br>
+&lt;li&gt;Almuerzo &lt;/li&gt;<br>
+&lt;li&gt;Cena&lt;/li&gt;<br>
+
+&lt;/ol&gt;<br>
+	<br>
+ol.latin {list-style-type: lower-latin;}<br>
+
+ol.roman {list-style-type: upper-roman;}
+
+
+<br>
+</code></center></p>
+<br>
+<p>Resultado:
+<br>
+<br><img src="https://desarrolladoresweb.org/wp-content/uploads/estilo-para-listas-ordenadas-con-CSS.jpg">
+</p>
+<h2><br><span class="ez-toc-section" id=""></span>Propiedad list-style-image<span class="ez-toc-section-end"></span></h2>
+<br>
+	<p>La propiedad <em>list-style-image</em> de CSS nos permite establecer una imagen como viñeta para los elementos de una lista.</p>
+<br>
+	<p><center><code>
+	&lt;ul class="conimagen"&gt;<br>
+
+&lt;li&gt;HTML &lt;/li&gt;<br>
+&lt;li&gt;CSS&lt;/li&gt;<br>
+&lt;li&gt;JavaScript&lt;/li&gt;<br>
+
+&lt;/ul&gt;<br>
+<br>
+ul.conimagen {list-style-image:url("sonrisa.jpg");<br>
+
+list-style-position:inside;}<br>
+
+<br>
+</code></center></p>
+<p>
+	Resultado: <br><br>
+<img src="https://desarrolladoresweb.org/wp-content/uploads/Vi%C3%B1eta-de-listas-con-imagenes-en-CSS-ejemplo.jpg">	
+</p>
+
+<td bgcolor="#2E2C28" ><center>
+	<img src="https://tpc.googlesyndication.com/simgad/5914841909684273626" border="0" width="300" height="250" alt="" class="img_ad">
+ 	<img src="https://tpc.googlesyndication.com/simgad/4989088648547158897" border="0" width="300" height="250" alt="" class="img_ad">
+	</center>
+</td>
+</tr>
+</tbody>
+</table>
+	<footer><center>
+<br>
+<u> Registrate <a href="registro.html" class="reg">aquí</a></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Inicia Sesión <a href="sesion.html" class="reg">aquí</a></u><br>
+	
+  <center><a href=""><img src="fac.png" width="40"></a><a href=""><img src="twit.png" width="40"></a><a href=""><img src="insta.png" width="40"></a></center>
+	
+<p><b>Derechos reservados la reproduccion parcial de esta pagina sin autorización es ilegal</b></p>
+</center></footer>
+</body>
+</html>
